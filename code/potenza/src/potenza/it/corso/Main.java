@@ -6,7 +6,6 @@ public class Main {
 		int numero = 2;
 		int potenza = 2;
 
-		int i1=0;
 		for (int i = 0; i < 15; i++) {
 			potenza = numero * potenza;
 			System.out.println(potenza);
