@@ -2,7 +2,7 @@ package ricorsione.it.corso;
 
 public class Ricorsione {
 	public static void main(String[] args) {
-		int a =130;
+		int a =12;
 		int risultato = f(a);
 		System.out.println(risultato);
 	}
