@@ -1,5 +1,6 @@
 package com.bubblesort;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -8,13 +9,19 @@ public class Main {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		int n;
-
 		int arr[] = new int[10];
-		System.out.println("inserisci 10 numeri: ");
-		for (int i = 0; i < 10; i++) {
-			n = input.nextInt();
-			arr[i] = n;
-
+		try {
+			System.out.println("inserisci 10 numeri: ");
+			for (int i = 0; i < 10; i++) {
+				n = input.nextInt();
+				arr[i] = n;
+			}
+		} catch (InputMismatchException e) {
+			// TODO: handle exception
+			System.out.println("errore :" + e);
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("errore :" + e);
 		}
 
 		bubbleSort(arr);
